@@ -1,0 +1,57 @@
+.bar-chart-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-chart-title {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Position context for absolute children */
+    margin-top: 30px;
+    width: 60%; /* Set a fixed width for the image carousel */
+    height: 400px; /* Set a fixed height for the image carousel */
+    overflow: hidden; /* Prevent overflow if images exceed container size */
+}
+
+.image-carousel img {
+    position: absolute; /* Position images absolutely to stack */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth opacity and transform */
+}
+
+.image-carousel img.show {
+    opacity: 1; /* Make current image visible */
+    transform: rotateY(0deg); /* Normal state */
+}
+
+.image-carousel img.hide {
+    opacity: 0; /* Make image hidden */
+    transform: rotateY(-180deg); /* Hide it by rotating */
+}
+
+/* Optional: Hover effect on images */
+.image-carousel img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px; /* Optional: Define a max width for the entire dashboard */
+    margin: 0 auto; /* Center the dashboard on the page */
+}

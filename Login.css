@@ -1,0 +1,83 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #bce409; /* Soft background color */
+    color: #3A2C29; /* Dark text color for better contrast */
+}
+
+.login-container {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 80px auto; /* Center the form */
+    padding: 30px;
+    border-radius: 15px; /* Round the corners */
+    background-color: #a1f00d; /* Light card background color */
+    box-shadow: 4px 4px 30px rgba(0, 0, 1, 2); /* Soft shadow effect */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    font-size: 28px; /* Larger font size for a welcoming message */
+    margin-bottom: 20px; /* Space below the heading */
+    color: white; /* Warm color for the main heading */
+}
+
+h2 {
+    font-size: 22px; /* Adjust font size for subheading */
+    margin: 20px 0; /* Margin for spacing */
+    color: black; /* Darker hue for subheadings */
+}
+
+/* Status Message Styles */
+.status-message {
+    margin: 10px 0; /* Vertical space above and below */
+}
+
+/* Error message style */
+.status-message.error {
+    color: red; /* Error message color */
+}
+
+/* Success message style */
+.status-message.success {
+    color: #5cb85c; /* Success message color (green) */
+}
+
+.login-form {
+    display: flex;
+    box-shadow:  4px 10px rgb(92, 240, 6);
+    background-color: green;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+.login-input {
+    padding: 12px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 2px solid #90fa75; /* Soft border */
+    border-radius: 5px; /* Round the corners */
+    font-size: 16px; /* Font size */
+    background-color:#90fa75; /* Input background color */
+    color: #3A2C29; /* Text color in inputs */
+}
+
+.login-input::placeholder {
+    color: #C8B3B1; /* Placeholder color */
+}
+
+.login-button,
+.toggle-button {
+    padding: 12px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e9bcb3; /* Button background color */
+    color: #3A2C29; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.login-button:hover,
+.toggle-button:hover {
+    background-color: #d9534f; /* Darker color on hover */
+}
